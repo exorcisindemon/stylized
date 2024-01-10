@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav
       className={`${
         expandNavbar ? "h-screen lg:h-auto" : "h-auto"
-      } bg-white text-white text-sm p-4 lg:px-4 lg:pt-2 lg:pb-4 flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center justify-between w-full`}
+      } invert lg:invert-0 bg-white text-white text-sm p-4 lg:px-4 lg:pt-2 lg:pb-4 flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center justify-between w-full`}
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
         <div className="flex flex-row gap-4 lg:gap-2 items-center justify-between lg:justify-normal w-full lg:w-auto">

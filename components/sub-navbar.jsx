@@ -20,7 +20,7 @@ const {
 
 const SubNavbar = () => {
   return (
-    <nav className="bg-white text-white text-sm p-4 lg:px-4 lg:pt-4 lg:pb-2 flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center justify-between w-full">
+    <nav className="invert lg:invert-0 bg-white text-white text-sm p-4 lg:px-4 lg:pt-4 lg:pb-2 flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center justify-between w-full">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
         <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
           <Image src={SellerCenter} width="16" height="16" />
