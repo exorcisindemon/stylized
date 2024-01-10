@@ -150,7 +150,7 @@ const Navbar = () => {
               </button>
               <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-lg p-2 lg:px-2 lg:py-2">
                 <Image src={CreateNewAccount} width="16" height="16" />
-                Create new Account
+                Join Now!
               </button>
             </div>
           </div>
