@@ -1,7 +1,8 @@
-const { default: Header } = require("../components/header");
 const {
   default: ScreenLayout,
 } = require("../components/layouts/screen-layout");
+const { default: Header } = require("../components/header");
+const { default: Category } = require("../components/category");
 
 export default function Home() {
   return (

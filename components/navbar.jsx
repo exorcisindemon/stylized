@@ -156,8 +156,8 @@ const Navbar = () => {
                 />
               </button>
               {expandNotifications && (
-                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
-                  <div className="flex flex-row">
+                <div className="absolute flex flex-col gap-0 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
+                  <div className="flex flex-row w-full justify-center uppercase mb-4">
                     <p className="font-bold bg-transparent text-black/80">
                       Notifications
                     </p>
@@ -211,8 +211,8 @@ const Navbar = () => {
                 />
               </button>
               {expandCart && (
-                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
-                  <div className="flex flex-row">
+                <div className="absolute flex flex-col gap-0 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
+                  <div className="flex flex-row w-full justify-center uppercase mb-4">
                     <p className="font-bold bg-transparent text-black/80">
                       Cart
                     </p>
@@ -250,8 +250,8 @@ const Navbar = () => {
                 />
               </button>
               {expandLanguage && (
-                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
-                  <div className="flex flex-row">
+                <div className="absolute flex flex-col gap-0 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
+                  <div className="flex flex-row w-full justify-center uppercase mb-4">
                     <p className="font-bold bg-transparent text-black/80">
                       Language
                     </p>
