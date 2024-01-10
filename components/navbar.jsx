@@ -108,7 +108,7 @@ const Navbar = () => {
         <>
           <div className="flex flex-row gap-2 items-center bg-black/10 outline-none w-full lg:w-[20%] font-semibold text-black rounded-lg px-2 py-2">
             <input
-              placeholder={["2000s outfit", "Long Sleeve Shirt"]}
+              placeholder={["2000s Outfit", " Long Sleeve Shirt"]}
               className="bg-transparent w-full outline-none"
               type="text"
             />

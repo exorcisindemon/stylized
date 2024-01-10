@@ -6,7 +6,7 @@ const {
 
 const Header = () => {
   return (
-    <header className="bg-black/10 h-auto lg:h-[480px]">
+    <header className="bg-black/10 h-auto">
       <Image className="w-full h-auto" src={NEWYEARSTYLIZED} />
     </header>
   );
