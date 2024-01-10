@@ -89,7 +89,7 @@ const Navbar = () => {
         </label>
         {expandNavbar && (
           <>
-            <div className="flex flex-row gap-2 items-center bg-black/10 outline-none w-full lg:w-auto font-semibold text-black rounded-lg px-2 py-2">
+            <div className="transition-all flex flex-row gap-2 items-center bg-transparent border-b border-black hover:border-black/90 outline-none w-full lg:w-auto font-semibold text-black px-2 py-2">
               <input
                 placeholder={["2000s Outfit", " Long Sleeve Shirt"]}
                 className="bg-transparent w-full lg:w-64 outline-none"
