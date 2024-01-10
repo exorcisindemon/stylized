@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const { default: Search } = require("../shared/icons/search-line.svg");
 const { default: TShirt } = require("../shared/icons/t-shirt-line.svg");
-const { default: Percent } = require("../shared/icons/percent-line.svg");
+const { default: Coupon } = require("../shared/icons/coupon-line.svg");
 const {
   default: Notification,
 } = require("../shared/icons/notification-line.svg");
@@ -89,7 +89,7 @@ const Navbar = () => {
             <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
               <div className="flex flex-col items-start">
                 <div className="flex flex-row gap-2">
-                  <Image src={Percent} width="16" height="16" />
+                  <Image src={Coupon} width="16" height="16" />
                   Promo
                 </div>
                 <p className="flex lg:hidden text-start text-xs font-medium bg-transparent text-black/80">
