@@ -1,4 +1,4 @@
-const { default: HeaderHome } = require("../components/header-home");
+const { default: Header } = require("../components/header");
 const {
   default: ScreenLayout,
 } = require("../components/layouts/screen-layout");
@@ -6,7 +6,7 @@ const {
 export default function Home() {
   return (
     <ScreenLayout>
-      <HeaderHome />
+      <Header />
     </ScreenLayout>
   );
 }

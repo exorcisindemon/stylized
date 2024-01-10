@@ -1,5 +1,6 @@
 import { Manrope } from "next/font/google";
 const { default: Navbar } = require("../components/navbar");
+const { default: SubNavbar } = require("../components/sub-navbar");
 import "./globals.css";
 
 const font = Manrope({
@@ -16,8 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
-        {children}
+        <nav className="flex flex-col-reverse lg:flex-col lg:fixed z-10 w-full">
+          <SubNavbar />
+          <Navbar />
+        </nav>
+        <div className="relative top-auto lg:top-[120px]">{children}</div>
       </body>
     </html>
   );

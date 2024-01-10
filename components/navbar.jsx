@@ -6,12 +6,9 @@ const { default: Search } = require("../shared/icons/search-line.svg");
 const { default: TShirt } = require("../shared/icons/t-shirt-line.svg");
 const { default: Percent } = require("../shared/icons/percent-line.svg");
 const {
-  default: DownloadApp,
-} = require("../shared/icons/download-app-line.svg");
+  default: ShoppingCart,
+} = require("../shared/icons/shopping-cart-line.svg");
 const { default: Translate } = require("../shared/icons/translate-line.svg");
-const {
-  default: CustomerService,
-} = require("../shared/icons/customer-service-line.svg");
 const { default: ArrowRight } = require("../shared/icons/arrow-right-line.svg");
 const { default: ArrowDown } = require("../shared/icons/arrow-down-line.svg");
 const { default: Login } = require("../shared/icons/login-line.svg");
@@ -32,20 +29,22 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    <nav
       className={`${
         expandNavbar ? "h-screen lg:h-auto" : "h-auto"
-      } bg-white text-white text-sm p-4 flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center justify-between w-full`}
+      } bg-white text-white text-sm p-4 lg:px-4 lg:pt-2 lg:pb-4 flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center justify-between w-full`}
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
         <div className="flex flex-row gap-4 lg:gap-2 items-center justify-between lg:justify-normal w-full lg:w-auto">
           <div className="flex flex-col lg:flex-row gap-0 lg:gap-2">
-            <h1 className="font-semibold bg-transparent text-black">
-              STYLIZED
-            </h1>
-            <p className="text-start text-xs lg:text-sm font-medium bg-transparent text-black/80">
-              Match your style
-            </p>
+            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
+              <h1 className="font-semibold bg-transparent text-black">
+                STYLIZED
+              </h1>
+              <p className="text-start text-xs lg:text-sm font-medium bg-transparent text-black/80">
+                Match your style
+              </p>
+            </button>
           </div>
           <button
             className="flex lg:hidden bg-black/10 p-2 rounded-lg"
@@ -102,24 +101,6 @@ const Navbar = () => {
                 height="16"
               />
             </button>
-            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
-              <div className="flex flex-col items-start">
-                <div className="flex flex-row gap-2">
-                  <Image src={DownloadApp} width="16" height="16" />
-                  Download App
-                </div>
-                <p className="flex lg:hidden text-start text-xs font-medium bg-transparent text-black/80">
-                  Access our services effortlessly by downloading our app and
-                  enjoy a seamless experience at your fingertips
-                </p>
-              </div>
-              <Image
-                className="flex lg:hidden"
-                src={ArrowRight}
-                width="16"
-                height="16"
-              />
-            </button>
           </>
         )}
       </div>
@@ -135,8 +116,9 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
             <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
-              <Image src={CustomerService} width="16" height="16" />
-              Help Center
+              <Image src={ShoppingCart} width="16" height="16" />
+              Cart
+              <Image src={ArrowDown} width="16" height="16" />
             </button>
             <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
               <Image src={Translate} width="16" height="16" />
@@ -156,7 +138,7 @@ const Navbar = () => {
           </div>
         </>
       )}
-    </div>
+    </nav>
   );
 };
 
