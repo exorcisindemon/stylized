@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <SubNavbar />
           <Navbar />
         </nav>
-        <div className="relative top-auto lg:top-[120px]">{children}</div>
+        {children}
       </body>
     </html>
   );

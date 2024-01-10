@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const {
   default: SellerCenter,
@@ -41,9 +42,15 @@ const SubNavbar = () => {
         </button>
         <div className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
           Follow Us
-          <Image src={Discord} width="16" height="16" />
-          <Image src={GitHub} width="16" height="16" />
-          <Image src={Instagram} width="16" height="16" />
+          <Link href="/">
+            <Image src={Discord} width="16" height="16" />
+          </Link>
+          <Link href="https://github.com/exorcisindemon">
+            <Image src={GitHub} width="16" height="16" />
+          </Link>
+          <Link href="https://www.instagram.com/rasxev/">
+            <Image src={Instagram} width="16" height="16" />
+          </Link>
         </div>
       </div>
     </nav>

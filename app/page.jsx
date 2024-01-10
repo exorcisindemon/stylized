@@ -6,7 +6,9 @@ const {
 export default function Home() {
   return (
     <ScreenLayout>
-      <Header />
+      <div className="relative top-auto lg:top-[120px]">
+        <Header />
+      </div>
     </ScreenLayout>
   );
 }

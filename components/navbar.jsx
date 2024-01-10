@@ -6,6 +6,9 @@ const { default: Search } = require("../shared/icons/search-line.svg");
 const { default: TShirt } = require("../shared/icons/t-shirt-line.svg");
 const { default: Percent } = require("../shared/icons/percent-line.svg");
 const {
+  default: Notification,
+} = require("../shared/icons/notification-line.svg");
+const {
   default: ShoppingCart,
 } = require("../shared/icons/shopping-cart-line.svg");
 const { default: Translate } = require("../shared/icons/translate-line.svg");
@@ -37,7 +40,7 @@ const Navbar = () => {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
         <div className="flex flex-row gap-4 lg:gap-2 items-center justify-between lg:justify-normal w-full lg:w-auto">
           <div className="flex flex-col lg:flex-row gap-0 lg:gap-2">
-            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
+            <button className="transition-all lg:hover:bg-black/10 flex flex-col lg:flex-row gap-0 lg:gap-2 items-start lg:items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
               <h1 className="font-semibold bg-transparent text-black">
                 STYLIZED
               </h1>
@@ -101,20 +104,25 @@ const Navbar = () => {
                 height="16"
               />
             </button>
+            <div className="flex flex-row gap-2 items-center bg-black/10 outline-none w-full lg:w-auto font-semibold text-black rounded-lg px-2 py-2">
+              <input
+                placeholder={["2000s Outfit", " Long Sleeve Shirt"]}
+                className="bg-transparent w-full lg:w-64 outline-none"
+                type="text"
+              />
+              <Image src={Search} width="16" height="16" />
+            </div>
           </>
         )}
       </div>
       {expandNavbar && (
         <>
-          <div className="flex flex-row gap-2 items-center bg-black/10 outline-none w-full lg:w-[20%] font-semibold text-black rounded-lg px-2 py-2">
-            <input
-              placeholder={["2000s Outfit", " Long Sleeve Shirt"]}
-              className="bg-transparent w-full outline-none"
-              type="text"
-            />
-            <Image src={Search} width="16" height="16" />
-          </div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
+            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
+              <Image src={Notification} width="16" height="16" />
+              Notifications
+              <Image src={ArrowDown} width="16" height="16" />
+            </button>
             <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
               <Image src={ShoppingCart} width="16" height="16" />
               Cart
