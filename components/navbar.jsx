@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const { default: Search } = require("../shared/icons/search-line.svg");
+const { default: TShirt } = require("../shared/icons/t-shirt-line.svg");
+const { default: Percent } = require("../shared/icons/percent-line.svg");
 const {
   default: DownloadApp,
 } = require("../shared/icons/download-app-line.svg");
@@ -10,6 +12,7 @@ const { default: Translate } = require("../shared/icons/translate-line.svg");
 const {
   default: CustomerService,
 } = require("../shared/icons/customer-service-line.svg");
+const { default: ArrowRight } = require("../shared/icons/arrow-right-line.svg");
 const { default: ArrowDown } = require("../shared/icons/arrow-down-line.svg");
 const { default: Login } = require("../shared/icons/login-line.svg");
 const {
@@ -36,13 +39,13 @@ const Navbar = () => {
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-2 items-start lg:items-center w-full lg:w-auto">
         <div className="flex flex-row gap-4 lg:gap-2 items-center justify-between lg:justify-normal w-full lg:w-auto">
-          <div className="flex flex-col lg:flex-row gap-2">
+          <div className="flex flex-col lg:flex-row gap-0 lg:gap-2">
             <h1 className="font-semibold bg-transparent text-black">
               STYLIZED
             </h1>
-            <h1 className="font-medium bg-transparent text-black/80">
-              Find your style
-            </h1>
+            <p className="text-start text-xs lg:text-sm font-medium bg-transparent text-black/80">
+              Match your style
+            </p>
           </div>
           <button
             className="flex lg:hidden bg-black/10 p-2 rounded-lg"
@@ -63,17 +66,59 @@ const Navbar = () => {
         </label>
         {expandNavbar && (
           <>
-            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
-              <Image src={CreateNewAccount} width="16" height="16" />
-              Fashion
+            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
+              <div className="flex flex-col items-start">
+                <div className="flex flex-row gap-2">
+                  <Image src={TShirt} width="16" height="16" />
+                  Fashion
+                </div>
+                <p className="flex lg:hidden text-start text-xs font-medium bg-transparent text-black/80">
+                  Discover a curated selection that complements your unique
+                  taste
+                </p>
+              </div>
+              <Image
+                className="flex lg:hidden"
+                src={ArrowRight}
+                width="16"
+                height="16"
+              />
             </button>
-            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
-              <Image src={CreateNewAccount} width="16" height="16" />
-              Promo
+            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
+              <div className="flex flex-col items-start">
+                <div className="flex flex-row gap-2">
+                  <Image src={Percent} width="16" height="16" />
+                  Promo
+                </div>
+                <p className="flex lg:hidden text-start text-xs font-medium bg-transparent text-black/80">
+                  Explore our limited-time promotions and discounts curated just
+                  for you
+                </p>
+              </div>
+              <Image
+                className="flex lg:hidden"
+                src={ArrowRight}
+                width="16"
+                height="16"
+              />
             </button>
-            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-2 items-center font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2">
-              <Image src={DownloadApp} width="16" height="16" />
-              Download App
+            <button className="transition-all lg:hover:bg-black/10 flex flex-row gap-4 lg:gap-2 items-center justify-between font-semibold bg-transparent text-black rounded-none lg:rounded-lg p-0 lg:px-2 lg:py-2 w-full lg:w-auto">
+              <div className="flex flex-col items-start">
+                <div className="flex flex-row gap-2">
+                  <Image src={DownloadApp} width="16" height="16" />
+                  Download App
+                </div>
+                <p className="flex lg:hidden text-start text-xs font-medium bg-transparent text-black/80">
+                  Access our services effortlessly by downloading our app and
+                  enjoy a seamless experience at your fingertips
+                </p>
+              </div>
+              <Image
+                className="flex lg:hidden"
+                src={ArrowRight}
+                width="16"
+                height="16"
+              />
             </button>
           </>
         )}
