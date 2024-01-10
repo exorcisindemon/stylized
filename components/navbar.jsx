@@ -156,7 +156,7 @@ const Navbar = () => {
                 />
               </button>
               {expandNotifications && (
-                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4">
+                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
                   <div className="flex flex-row">
                     <p className="font-bold bg-transparent text-black/80">
                       Notifications
@@ -185,7 +185,7 @@ const Navbar = () => {
                           To complete your account setup, we need a bit more
                           information from you. Please log in to your account
                           and fill in the required fields to ensure a seamless
-                          experience.
+                          experience
                         </p>
                       </div>
                       <Image src={ArrowRight} width="16" height="16" />
@@ -211,7 +211,7 @@ const Navbar = () => {
                 />
               </button>
               {expandCart && (
-                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4">
+                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
                   <div className="flex flex-row">
                     <p className="font-bold bg-transparent text-black/80">
                       Cart
@@ -250,7 +250,7 @@ const Navbar = () => {
                 />
               </button>
               {expandLanguage && (
-                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4">
+                <div className="absolute flex flex-col gap-4 top-16 right-0 w-full lg:w-80 mt-0 bg-white text-black rounded-lg p-4 shadow-2xl shadow-white/20">
                   <div className="flex flex-row">
                     <p className="font-bold bg-transparent text-black/80">
                       Language
